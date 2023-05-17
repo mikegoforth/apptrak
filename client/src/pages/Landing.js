@@ -1,6 +1,5 @@
 import main from '../assets/images/main.svg';
 import Wrapper from '../assets/wrappers/LandingPage';
-import { Logo } from '../components';
 import { Link } from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 import { useAppContext } from '../context/appContext';
@@ -13,7 +12,7 @@ const Landing = () => {
       {user && <Navigate to='/' />}
       <Wrapper>
         <nav>
-          <Logo />
+          <span className='logo-text'>AppTrak</span>
         </nav>
         <div className='container page'>
           {/* info */}
