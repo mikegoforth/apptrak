@@ -8,6 +8,10 @@ const Wrapper = styled.section`
     margin: 0 auto;
     margin-bottom: 1.38rem;
   }
+  .logo-text {
+    text-align: center;
+    margin-bottom: 1.38rem;
+  }
   .form {
     max-width: 400px;
     border-top: 5px solid var(--primary-600);

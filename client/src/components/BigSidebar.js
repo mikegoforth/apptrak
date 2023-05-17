@@ -1,6 +1,7 @@
 import { useAppContext } from '../context/appContext'
 import NavLinks from './NavLinks'
 import Wrapper from '../assets/wrappers/BigSidebar'
+import { Link } from 'react-router-dom'
 
 const BigSidebar = () => {
   const { showSidebar } = useAppContext()
@@ -13,7 +14,7 @@ const BigSidebar = () => {
       >
         <div className='content'>
           <header>
-            <h2>AppTrak</h2>
+            <Link to='/' className='logo-text'>AppTrak</Link>
           </header>
           <NavLinks />
         </div>
