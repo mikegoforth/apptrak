@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Logo, FormRow, Alert } from '../components';
+import { FormRow, Alert } from '../components';
 import Wrapper from '../assets/wrappers/RegisterPage';
 import { useAppContext } from '../context/appContext';
 import { useNavigate } from 'react-router-dom';
@@ -57,7 +57,7 @@ const Register = () => {
   return (
     <Wrapper className='full-page'>
       <form className='form' onSubmit={onSubmit}>
-        <Logo />
+        <h2 className='logo-text'>AppTrak</h2>
         <h3>{values.isMember ? 'Login' : 'Register'}</h3>
         {showAlert && <Alert />}
         {/* name input */}
